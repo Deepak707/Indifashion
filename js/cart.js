@@ -72,12 +72,12 @@ document.getElementById('placeOrderBtn').addEventListener('click', function() {
         cartItems: cartData
     };
 
-    fetch('/cart_data', {
+    fetch('http://127.0.0.1:5001/cart_data', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(orderData)
+         body: JSON.stringify(orderData)
     })
     .then(response => response.json())
     .then(data => {
