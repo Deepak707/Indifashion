@@ -72,7 +72,7 @@ document.getElementById('placeOrderBtn').addEventListener('click', function() {
         cartItems: cartData
     };
 
-    fetch('http://127.0.0.1:5001/cart_data', {
+    fetch('https://indifashion.netlify.app/cart/cart_data', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
