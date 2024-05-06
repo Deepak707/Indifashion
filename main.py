@@ -23,8 +23,7 @@ CORS(app)
 @app.route('/cart_data', methods=['POST'])
 def place_order():
     try:
-        # print(x)
-        # print(y)
+
 
         order_data = request.json
         email = order_data.get('email')
