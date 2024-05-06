@@ -46,6 +46,3 @@ def place_order():
         return jsonify({'message': 'Hello error',
                         'error': str(e)})
 
-
-if __name__ == "__main__":
-    app.run(debug=True, port=5001)
